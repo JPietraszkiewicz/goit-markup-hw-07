@@ -409,14 +409,14 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* NASI KLIENCI */
+/* OUR CLIENTS */
 
-.our-clients-section {
+.our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.our-clients-headline {
+.our-clients__headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -424,7 +424,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
-.clients-link {
+.our-clients__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -434,31 +434,29 @@ body {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover {
+.our-clients__link:hover {
   border-color: var(--selection-color);
 }
-.clients-link:focus {
+.our-clients__link:focus {
   outline: none;
   border: 1px solid var(--selection-color);
   border-radius: 4px;
 }
-.clients-link:hover > .clients-icon {
+.our-clients__link:hover > .our-clients__icon {
   fill: var(--selection-color);
 }
-.clients-link:focus > .clients-icon {
+.our-clients__link:focus > .our-clients__icon {
   fill: var(--selection-color);
 }
-.clients-link:active > .clients-icon {
-  fill: var(--selection-color);
-}
-.our-clients-icons {
+
+.our-clients__icons-list {
   display: flex;
   gap: 30px;
   padding-left: 0;
   padding-top: 50px;
 }
 
-.clients-icon {
+.our-clients__icon {
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -538,11 +536,11 @@ body {
   color: var(--footer-logo-address-color);
   padding-bottom: 9px;
 }
-.agency-footer-mail {
+.footer__mail-link {
   padding-bottom: 9px;
 }
-.footer-tel-link,
-.agency-footer-mail {
+.footer__tel-link,
+.footer__mail-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -551,17 +549,17 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-tel-link:hover,
-.footer-tel-link:focus {
+.footer__tel-link:hover,
+.footer__tel-link:focus {
   color: var(--selection-color);
 }
 
-.agency-footer-mail:hover,
-.agency-footer-mail:focus {
+.footer__mail-link:hover,
+.footer__mail-link:focus {
   color: var(--selection-color);
 }
 
-.signup-label {
+.signup-form__label {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.17;
@@ -570,7 +568,7 @@ body {
   color: var(--footer-logo-address-color);
   padding-bottom: 20px;
 }
-.field {
+.signup-form__field {
   display: flex;
   flex-direction: column;
 }
@@ -578,38 +576,26 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 12px;
-
   margin-left: 8px;
   gap: 12px;
 }
 .ftr-submit-btn {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--secondary-font-color);
-  background-color: var(--selection-color);
-  border: none;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 42px;
   padding-right: 28px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  text-align: center;
   margin-top: 36px;
 }
 
-.send-mail-icon {
+.ftr-submit-btn__icon {
   fill: currentColor;
 }
-.signup-label + input {
+.signup-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -620,7 +606,7 @@ body {
   padding-bottom: 15px;
   padding-left: 16px;
 }
-.signup-label + input::placeholder {
+.signup-form__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -765,21 +751,10 @@ body {
 
 /*PORTFOLIO FOOTER */
 
-.portfolio-footer-mail {
-  font-weight: 14;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: var(--footer-links-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer__mail-link--underline {
+  text-decoration: underline;
 }
 
-.portfolio-footer-mail:hover,
-.portfolio-footer-mail:focus {
-  color: var(--selection-color);
-}
 /*-----BACKDROP-----*/
 
 .backdrop {
