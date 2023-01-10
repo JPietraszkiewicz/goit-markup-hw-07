@@ -1,0 +1,11 @@
+.header {
+    &__container {
+        display: flex;
+}
+    &__logo {
+        color: var(--primary-color);
+        margin-top: 24px;
+        margin-bottom: 25px;
+        margin-right: 93px;
+}
+}
