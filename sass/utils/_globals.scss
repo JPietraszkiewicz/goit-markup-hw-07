@@ -21,4 +21,16 @@ body {
 
 .list {
     list-style: none;
+    padding-left: 0;
+    display: flex;
   }
+
+.section-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+  margin: 0 auto;
+}  
