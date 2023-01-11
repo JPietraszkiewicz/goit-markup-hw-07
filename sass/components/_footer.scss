@@ -74,6 +74,9 @@
         text-decoration: none;
         color: var(--footer-links-color);
         transition: color 250ms var(--function-transition);
+          &--underline {
+            text-decoration: underline;
+            }
           }
       &__mail-link--position {
          padding-bottom: 9px;
@@ -86,7 +89,6 @@
       }
   }
   
-  
   .footer {
       &__mail-link:hover,
       &__mail-link:focus {
@@ -94,8 +96,6 @@
       }
   }
     
-  
-  
   
   
   
